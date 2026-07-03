@@ -1,35 +1,33 @@
 # 🐦🕹️ Ornithopter with Custom Made Controller
 
-A bio-inspired ornithopter prototype developed to mimic the flapping flight of birds using a custom-built wireless transmitter and receiver system. This project combines embedded systems, wireless communication, and mechanical wing actuation to demonstrate the fundamentals of flapping-wing flight control.
+A bio-inspired flying robot designed to replicate flapping-wing flight dynamics using a custom-built wireless transmitter-receiver system. This project serves as a foundational step toward developing a Ornithopter with Spy-Camera — a bird-like flying robot — aimed at military surveillance, aerial reconnaissance, and advanced remote-control experimentation.
 
 <p align="center">
   <img src="Images/Ornithopter/ornithopter.jpg" width="700">
 </p>
 
-Inspired by bird flight, this prototype uses a custom handheld controller to wirelessly operate an ornithopter. A geared motor drives the wing-flapping mechanism, while a separate motor controls directional movement. Although this version is a prototype, it successfully demonstrates the communication, control, and mechanical principles required for future development.
+Inspired by the natural flight of birds, the system features a custom-designed controller and a dual-motor mechanism: one motor for wing flapping using a gear system, and another for directional control. Although flight was not fully achieved in this phase, the wing flapping and control architecture successfully demonstrate the core mechanical and communication principles for future enhancements.
 
 ---
 
 # ➤ Project Vision
 
-The goal of this project is to develop a lightweight bio-inspired flying robot capable of carrying small payloads such as cameras or sensors for aerial monitoring and research.
+The idea is to eventually integrate a Spy-camera into the ornithopter, enabling aerial surveillance — especially useful for defense and intelligence purposes.
 
 This prototype demonstrates:
 
 - Wing flapping mechanism
-- Wireless transmitter and receiver communication
-- Custom-built handheld controller
+- Custom controller design
 
 ---
 
 # ➤ Key Features
 
-- Bird-inspired mechanical design
-- Flapping-wing mechanism driven by a geared motor
+- Bird-like structure and motion
+- Wing flapping-mechanism using gear-driven motor
+- Direction control using mini coreless tail motor
 - Wireless communication using nRF24L01 modules
-- Direction control using a coreless DC motor
-- Custom joystick-based transmitter
-- Arduino Nano based control system
+- Custom-made handheld controller using joysticks
 
 ---
 
@@ -37,41 +35,53 @@ This prototype demonstrates:
 
 This project uses:
 
-- 2 × Arduino Nano boards (Transmitter & Receiver)
-- 2 × nRF24L01 wireless modules
-- Geared DC motor for wing flapping
-- Coreless DC motor for tail control
-- Two-axis joystick modules
-- Li-Po battery
-- Motor driver circuitry
-- Custom-built controller PCB
+- 2 Arduino Nano boards one for transmitter, one for receiver
+- 2 nRF24L01 modules for wireless communication
+- Mini coreless motors for wing flapping and tail direction control
+- Gear mechanism to replicate flapping action
+- Joysticks for user input and control
+- Li-Po battery as the main power source
 
 <p align="center">
-  <img src="Images/Controller_Unit/transmitter_controller.jpg" width="550">
+  <img src="Images/Controller_Unit/transmitter_controller.jpg" width="500">
 </p>
 
-For complete circuit diagrams and wiring details, refer to the **Schematic_Pictures/** folder.
+For detailed schematics and wiring references, please check the **Schematic_Pictures/** folder.
 
 ---
 
 # 📁 Repository Structure
 
-```
-ornithopter-with-custom-controller/
-│
+```text
+Ornithopter-with-Custom-Controller/
+
 ├── Code/
 │   ├── transmitter_code.ino
 │   └── receiver_code.ino
 │
 ├── Images/
 │   ├── Controller_Unit/
+│   │   ├── transmitter_controller.jpg
+│   │   └── receiver_module.jpg
+│   │
 │   └── Ornithopter/
+│       ├── front_view.jpg
+│       ├── side_view.jpg
+│       ├── top_view.jpg
+│       └── ornithopter.jpg
 │
 ├── Schematic_Pictures/
 │   ├── Circuit_Diagrams/
+│   │   ├── transmitter_circuit_diagram.jpg
+│   │   └── receiver_circuit_diagram.jpg
+│   │
 │   └── Wiring_Images/
+│       ├── transmitter_wiring.jpg
+│       └── receiver_wiring.jpg
 │
 ├── Videos/
+│   ├── bird_structure_testing.mp4
+│   └── ornithopter_mechanism_demo.mp4
 │
 ├── LICENSE
 └── README.md
@@ -81,79 +91,36 @@ ornithopter-with-custom-controller/
 
 # ➤ How It Works
 
-**Transmitter**
-
-- Reads joystick positions
-- Converts user inputs into control data
-- Sends data wirelessly through the nRF24L01 module
-
-**Receiver**
-
-- Receives wireless data
-- Processes commands using Arduino Nano
-- Controls the wing motor and tail motor
-
-**Wing Mechanism**
-
-- Geared DC motor generates the flapping motion.
-
-**Tail Mechanism**
-
-- Coreless motor changes the tail direction to assist steering.
+- **Transmitter:** Reads joystick values (throttle, yaw, pitch, roll) and transmits data via nRF24L01.
+- **Receiver:** Decodes incoming signals and drives motors using PWM signals.
+- **Wing Mechanism:** Driven by a geared motor to mimic flapping.
+- **Tail Motor:** Rotates based on joystick yaw value to simulate turning.
 
 ---
 
-# 📸 Project Images
+# 📸 Sneak Peek
 
-### Ornithopter
-
-<p align="center">
-  <img src="Images/Ornithopter/front_view.jpg" width="250">
-  <img src="Images/Ornithopter/side_view.jpg" width="250">
-  <img src="Images/Ornithopter/top_view.jpg" width="250">
-</p>
-
-### Controller Unit
-
-<p align="center">
-  <img src="Images/Controller_Unit/transmitter_controller.jpg" width="350">
-  <img src="Images/Controller_Unit/receiver_module.jpg" width="350">
-</p>
-
----
-
-# 🎥 Demo Video
-
-Visit the **Videos/** folder to watch the working demonstration of the ornithopter prototype.
+🎥 Visit the **Videos/** folder for real demo clips of the flapping mechanism in action.
 
 ---
 
 # ➤ Future Enhancements
 
-Future improvements include:
+Our ornithopter serves as a foundation for future upgrades, such as:
 
-- Integrating an onboard FPV camera
-- Reducing overall weight
-- Improving wing efficiency
-- Adding IMU sensors for stabilization
-- GPS-assisted navigation
-- Autonomous flight control
-- AI-based flight optimization
+- Integrating a micro camera for FPV (First-Person View) and surveillance applications
+- Optimizing weight to achieve stable real-time flight
+- Adding onboard sensors like a gyroscope or accelerometer for improved flight stability
+- Implementing autonomous or semi-autonomous flight using microcontrollers and basic AI logic
 
 ---
 
-# ➤ Inspiration
+# ➤ Inspiration & Purpose
 
-This project was inspired by the remarkable flight of birds and the concept of flapping-wing aerial robots. It provided practical experience in embedded systems, wireless communication, motor control, and mechanical design while laying the groundwork for future ornithopter development.
+This project was inspired by the desire to recreate bird-like flapping flight through human-made systems. It lays the foundation for a bird-like, bio-inspired aerial platform designed for future use in military surveillance scenarios. By focusing initially on the fundamentals of flapping motion and control, this system aspires to evolve into a stealthy reconnaissance tool capable of discreet intelligence gathering.
 
 ---
 
 # 🙌 Acknowledgements
 
-I would like to thank my faculty members, project mentors, and the open-source electronics community for their valuable resources and guidance. This project also reflects extensive hands-on experimentation and continuous learning throughout the development process.
-
----
-
-## 📜 License
-
-This project is licensed under the MIT License.
+This project was inspired by a variety of educational resources and online tutorials. I would also like to acknowledge the effort put into applying my own ideas, logic, and hands-on experimentation throughout the development process.
