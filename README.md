@@ -1,6 +1,6 @@
 # 🐦🕹️ Ornithopter with Custom Made Controller
 
-A bio-inspired flying robot designed to replicate flapping-wing flight dynamics using a custom-built wireless transmitter-receiver system. This project serves as a foundational step toward developing a Ornithopter with Spy-Camera — a bird-like flying robot — aimed at military surveillance, aerial reconnaissance, and advanced remote-control experimentation.
+A bio-inspired flying robot designed to replicate flapping-wing flight dynamics using a custom-built wireless transmitter–receiver system. This project serves as a foundational step toward developing a Ornithopter with Spy-Camera — a bird-like flying robot — aimed at military surveillance, aerial reconnaissance, and advanced remote-control experimentation.
 
 <p align="center">
   <img src="Images/Ornithopter/ornithopter.jpg" width="700">
@@ -10,7 +10,7 @@ Inspired by the natural flight of birds, the system features a custom-designed c
 
 ---
 
-# ➤ Project Vision
+## ➤ Project Vision
 
 The idea is to eventually integrate a Spy-camera into the ornithopter, enabling aerial surveillance — especially useful for defense and intelligence purposes.
 
@@ -21,7 +21,7 @@ This prototype demonstrates:
 
 ---
 
-# ➤ Key Features
+## ➤ Key Features
 
 - Bird-like structure and motion
 - Wing flapping-mechanism using gear-driven motor
@@ -31,7 +31,7 @@ This prototype demonstrates:
 
 ---
 
-# ➤ Hardware Used (Summary)
+## ➤ Hardware Used (Summary)
 
 This project uses:
 
@@ -43,14 +43,14 @@ This project uses:
 - Li-Po battery as the main power source
 
 <p align="center">
-  <img src="Images/Controller_Unit/transmitter_controller.jpg" width="500">
+  <img src="Images/Controller_Unit/transmitter_controller.jpg" width="650">
 </p>
 
-For detailed schematics and wiring references, please check the **Schematic_Pictures/** folder.
+*For detailed schematics and wiring references, please check the **Schematic_Pictures/** folder.*
 
 ---
 
-# 📁 Repository Structure
+## 📁 Repository Structure
 
 ```text
 Ornithopter-with-Custom-Controller/
@@ -89,7 +89,7 @@ Ornithopter-with-Custom-Controller/
 
 ---
 
-# ➤ How It Works
+## ➤ How It Works
 
 - **Transmitter:** Reads joystick values (throttle, yaw, pitch, roll) and transmits data via nRF24L01.
 - **Receiver:** Decodes incoming signals and drives motors using PWM signals.
@@ -98,13 +98,13 @@ Ornithopter-with-Custom-Controller/
 
 ---
 
-# 📸 Sneak Peek
+## 📸 Sneak Peek
 
 🎥 Visit the **Videos/** folder for real demo clips of the flapping mechanism in action.
 
 ---
 
-# ➤ Future Enhancements
+## ➤ Future Enhancements
 
 Our ornithopter serves as a foundation for future upgrades, such as:
 
@@ -115,12 +115,12 @@ Our ornithopter serves as a foundation for future upgrades, such as:
 
 ---
 
-# ➤ Inspiration & Purpose
+## ➤ Inspiration & Purpose
 
 This project was inspired by the desire to recreate bird-like flapping flight through human-made systems. It lays the foundation for a bird-like, bio-inspired aerial platform designed for future use in military surveillance scenarios. By focusing initially on the fundamentals of flapping motion and control, this system aspires to evolve into a stealthy reconnaissance tool capable of discreet intelligence gathering.
 
 ---
 
-# 🙌 Acknowledgements
+## 🙌 Acknowledgements
 
 This project was inspired by a variety of educational resources and online tutorials. I would also like to acknowledge the effort put into applying my own ideas, logic, and hands-on experimentation throughout the development process.
